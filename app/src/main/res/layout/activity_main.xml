@@ -42,12 +42,14 @@
                 android:text="llamadas" />
 
         </com.google.android.material.tabs.TabLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_input_add"
+        android:onClick="browserFile"
         app:layout_anchor="@id/bottomAppBar2" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
