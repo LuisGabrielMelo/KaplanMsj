@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    tools:context=".formulario">
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="306dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Usaurio"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="309dp"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/registratebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="white"
+        android:text="Registrate"
+        android:textColor="@color/design_default_color_primary_dark"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/accederbutton"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="Acceder"
+        android:textColor="@color/design_default_color_primary_dark"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/googlebutton"
+        android:layout_width="168dp"
+        android:layout_height="49dp"
+        android:text="Google"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/facebookbutton"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:text="Facebook"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
