@@ -6,96 +6,125 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal|center_vertical"
     android:layout_marginTop="15dp"
-    android:background="@color/white"
-    tools:context=".formulario">
+    android:background="@color/white">
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="320dp"
+        android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        tools:layout_editor_absoluteX="34dp" />
+        android:autofillHints="password" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="306dp"
+        android:layout_width="0dp"
         android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
         android:ems="10"
-        android:hint="Usaurio"
+        android:hint="@string/user"
         android:inputType="textPersonName"
         android:padding="15dp"
-        android:text="Nombre"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="127dp" />
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebookbutton"
+        android:autofillHints="name" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="309dp"
+        android:layout_width="0dp"
         android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="15dp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="247dp" />
-
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        android:autofillHints="emailAddress" />
 
     <Button
         android:id="@+id/registratebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="white"
-        android:text="Registrate"
-        android:textColor="@color/design_default_color_primary_dark"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="441dp" />
-
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="@string/register"
+        android:textColor="@color/design_default_color_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <Button
         android:id="@+id/accederbutton"
-        android:layout_width="131dp"
-        android:layout_height="47dp"
-        android:background="@color/design_default_color_primary_dark"
-        android:text="Acceder"
-        android:textColor="@color/design_default_color_primary_dark"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="441dp" />
-
-    <Space
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="@string/login"
+        android:textColor="@color/design_default_color_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/registratebutton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <Button
         android:id="@+id/googlebutton"
         android:layout_width="168dp"
-        android:layout_height="49dp"
-        android:text="Google"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_google_24dp"
+        android:text="@string/google"
+        app:backgroundTint="@color/design_default_color_secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/facebookbutton"
         android:layout_width="159dp"
-        android:layout_height="50dp"
-        android:text="Facebook"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/ic_facebook_24dp"
+        android:text="@string/facebook"
+        app:backgroundTint="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/googlebutton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
