@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Kaplan</string>
+    <string name="password">Contraseña</string>
+    <string name="user">Usaurio</string>
+    <string name="name">Nombre</string>
+    <string name="email">Email</string>
+    <string name="register">Registrate</string>
+    <string name="login">Acceder</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
 </resources>
